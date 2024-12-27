@@ -1,0 +1,78 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Headline */
+.hb {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hb h1 {
+    font-family: "Harlow Solid Italic";
+    font-size: 2rem;
+}
+
+/* Camera and Prediction Display */
+.camera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.camera video {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 10px;
+    border: 2px solid #333;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Changed text color to black */
+    margin-top: 20px;
+}
+
+.details p {
+    font-size: 1.5rem;
+}
+
+/* Predict Button */
+.predict, .camaccess {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.predict:hover, .camaccess:hover {
+    background-color: #45a049;
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+    .camera video {
+        width: 600px;
+        height: 450px;
+    }
+}
